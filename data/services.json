@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "description": "Scalable, performant web applications built with Next.js, React, and modern frameworks. SEO optimized & lightning fast.",
+    "icon": "🌐"
+  },
+  {
+    "id": 2,
+    "title": "Mobile App Development",
+    "description": "Native and cross-platform mobile apps for iOS & Android using React Native, Flutter, and Swift/Kotlin.",
+    "icon": "📱"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design",
+    "description": "Beautiful, intuitive interfaces designed with Figma, Adobe XD. User-centered design that converts.",
+    "icon": "🎨"
+  },
+  {
+    "id": 4,
+    "title": "E-commerce Solutions",
+    "description": "Complete Shopify, WooCommerce, Magento stores. Payment integration, inventory, and scalable architecture.",
+    "icon": "🛒"
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing",
+    "description": "SEO, PPC, social media, and content marketing. Drive qualified traffic and increase conversions.",
+    "icon": "📈"
+  },
+  {
+    "id": 6,
+    "title": "Dedicated Teams",
+    "description": "Your extended team of senior developers, designers, and PMs. Seamless integration with your workflow.",
+    "icon": "👥"
+  }
+]

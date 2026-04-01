@@ -1,37 +1,26 @@
-# NeuraBay Next.js Website Build TODO
+# NeuraBay Next.js Website Build TODO (Updated)
 
-## Progress Tracking (Approved Plan Implementation)
+## Progress Tracking
 
-- [ ] **Step 1: Core Setup**
-  - Create package.json (Next.js 14+, Tailwind, Framer Motion, lucide-react icons)
-  - Create tailwind.config.js, postcss.config.js, next.config.js, tsconfig.json
-  - Run `npm install`
+- [x] **Step 1: Core Setup** ✅
+  - package.json updated with clsx, tailwind-merge ✅
+  - tailwind.config.js, postcss/next config, tsconfig ✅
+  - `cd e:/NeuraBay && npm install` (run this next to resolve deps/TS errors)
 
-- [ ] **Step 2: Global Styles & Layout**
-  - Create /app/globals.css (Tailwind imports)
-  - Create /app/layout.tsx (root layout with Navbar, Footer, metadata)
+- [x] **Step 2: Global Styles & Layout** ✅
+  - globals.css, layout.tsx created (Navbar/Footer refs added)
 
 - [ ] **Step 3: Reusable UI Components**
-  - Create /components/ui/ (Button.tsx, Card.tsx)
-  - Create base components: Navbar.tsx, Footer.tsx, Hero.tsx, etc.
+  - ui/Button.tsx, Card.tsx created
+  - utils.ts (clsx/tw-merge) ✅
 
 - [ ] **Step 4: Mock Data**
-  - Create /data/ (services.json, testimonials.json, stats.json, etc.)
 
 - [ ] **Step 5: Home Page**
-  - Create /app/page.tsx with all 9 sections (Hero, Services, Stats, Industries, Process, Testimonials, BlogPreview, CTA)
 
 - [ ] **Step 6: Other Pages**
-  - Services, Technologies, About, Blog, Career, Contact pages reusing components
 
 - [ ] **Step 7: Animations & Polish**
-  - Add Framer Motion to components (fade-ins, hovers, counters)
-  - Chatbot UI & enhanced forms
-  - Responsive testing
 
-- [ ] **Final: Test & Complete**
-  - `npm run dev` verification
-  - All checkboxes done ✅
-
-Current progress: Starting Step 1...
+**Next: Run `npm install` then refresh VSCode (Cmd/Ctrl+Shift+P > Reload Window) to resolve import errors. Confirm & proceed to data/components?**
 
