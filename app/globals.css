@@ -4,19 +4,54 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --background: 210 60% 99%;
+    --foreground: 224 24% 14%;
+    --muted: 220 26% 96%;
+    --muted-foreground: 215 15% 41%;
+    --border: 215 25% 88%;
+    --brand: 211 93% 50%;
+    --brand-foreground: 210 40% 98%;
+    --brand-600: 214 95% 45%;
+    --brand-700: 217 91% 39%;
+    --accent: 187 92% 42%;
+    --accent-foreground: 212 40% 98%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
+  html,
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    @apply min-h-full;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-2xl border border-white/70 bg-white/80 shadow-lg shadow-sky-100/60 backdrop-blur-sm;
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(226, 232, 240, 0.4) 0%,
+      rgba(226, 232, 240, 0.8) 35%,
+      rgba(226, 232, 240, 0.4) 70%
+    );
+    background-size: 1200px 100%;
+    @apply animate-shimmer;
   }
 }

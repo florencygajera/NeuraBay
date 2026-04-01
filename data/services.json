@@ -1,38 +1,44 @@
 [
   {
     "id": 1,
+    "slug": "web-development",
     "title": "Web Development",
-    "description": "Scalable, performant web applications built with Next.js, React, and modern frameworks. SEO optimized & lightning fast.",
-    "icon": "🌐"
+    "description": "Scalable, SEO-focused web applications built with Next.js, React, and modern architecture patterns.",
+    "icon": "Globe"
   },
   {
     "id": 2,
+    "slug": "mobile-app-development",
     "title": "Mobile App Development",
-    "description": "Native and cross-platform mobile apps for iOS & Android using React Native, Flutter, and Swift/Kotlin.",
-    "icon": "📱"
+    "description": "High-performance native and cross-platform mobile products with seamless UX and reliable delivery.",
+    "icon": "Smartphone"
   },
   {
     "id": 3,
+    "slug": "ui-ux-design",
     "title": "UI/UX Design",
-    "description": "Beautiful, intuitive interfaces designed with Figma, Adobe XD. User-centered design that converts.",
-    "icon": "🎨"
+    "description": "Human-centered interfaces that improve conversion, retention, and overall customer satisfaction.",
+    "icon": "Palette"
   },
   {
     "id": 4,
+    "slug": "e-commerce-solutions",
     "title": "E-commerce Solutions",
-    "description": "Complete Shopify, WooCommerce, Magento stores. Payment integration, inventory, and scalable architecture.",
-    "icon": "🛒"
+    "description": "Robust storefronts, checkout flows, and operations integrations designed to scale with your revenue.",
+    "icon": "ShoppingCart"
   },
   {
     "id": 5,
-    "title": "Digital Marketing",
-    "description": "SEO, PPC, social media, and content marketing. Drive qualified traffic and increase conversions.",
-    "icon": "📈"
+    "slug": "growth-marketing",
+    "title": "Growth Marketing",
+    "description": "Data-led SEO, paid campaigns, and lifecycle strategies to unlock repeatable customer acquisition.",
+    "icon": "LineChart"
   },
   {
     "id": 6,
+    "slug": "dedicated-teams",
     "title": "Dedicated Teams",
-    "description": "Your extended team of senior developers, designers, and PMs. Seamless integration with your workflow.",
-    "icon": "👥"
+    "description": "Embedded squads of engineers, designers, and product specialists aligned with your roadmap.",
+    "icon": "Users"
   }
 ]

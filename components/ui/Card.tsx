@@ -1,31 +1,30 @@
-import { cn } from '@/lib/utils'
 import { ReactNode } from 'react'
+import { cn } from '@/lib/utils'
 
 interface CardProps {
   children: ReactNode
   className?: string
-  header?: string
-  subheader?: string
 }
 
-export function Card({ children, className, header, subheader }: CardProps) {
+interface CardHeaderProps {
+  title: string
+  description?: string
+  className?: string
+}
+
+export function Card({ children, className }: CardProps) {
+  return <article className={cn('surface-card p-6 sm:p-7', className)}>{children}</article>
+}
+
+export function CardHeader({ title, description, className }: CardHeaderProps) {
   return (
-    <div className={cn(
-      'group bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 hover:border-blue-200',
-      className
-    )}>
-      {header && (
-        <div className="mb-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">{header}</h3>
-          {subheader && <p className="text-gray-600">{subheader}</p>}
-        </div>
-      )}
-      {children}
-    </div>
+    <header className={cn('mb-4', className)}>
+      <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+      {description ? <p className="mt-2 text-sm text-slate-600">{description}</p> : null}
+    </header>
   )
 }
 
-export function CardContent({ children }: { children: ReactNode }) {
-  return <div>{children}</div>
+export function CardContent({ children, className }: { children: ReactNode; className?: string }) {
+  return <div className={cn('text-slate-700', className)}>{children}</div>
 }
-
