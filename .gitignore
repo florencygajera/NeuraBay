@@ -1,0 +1,95 @@
+# =========================================
+# 🟦 NEXT.JS / NODE (Frontend)
+# =========================================
+
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+dist/
+build/
+
+# Next.js cache & misc
+.next/cache/
+.next/static/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Vercel deployment
+.vercel
+
+# =========================================
+# 🟨 PYTHON / FASTAPI (Backend)
+# =========================================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python env files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Database
+*.sqlite3
+
+# =========================================
+# 🟧 EDITOR / IDE
+# =========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# =========================================
+# 🟥 TEST / COVERAGE
+# =========================================
+
+coverage/
+htmlcov/
+.pytest_cache/
+
+# =========================================
+# 🟩 BUILD / TEMP FILES
+# =========================================
+
+*.bak
+*.tmp
+*.temp
+
+# =========================================
+# 🟪 DOCKER (OPTIONAL)
+# =========================================
+
+.dockerignore
+Dockerfile.local
