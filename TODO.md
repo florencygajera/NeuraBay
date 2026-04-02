@@ -2,17 +2,17 @@
 
 ## Progress Tracking
 
-- [x] **Step 1: Core Setup** ✅
-  - package.json updated with clsx, tailwind-merge ✅
-  - tailwind.config.js, postcss/next config, tsconfig ✅
+- [x] **Step 1: Core Setup** âœ…
+  - package.json updated with clsx, tailwind-merge âœ…
+  - tailwind.config.js, postcss/next config, tsconfig âœ…
   - `cd e:/NeuraBay && npm install` (run this next to resolve deps/TS errors)
 
-- [x] **Step 2: Global Styles & Layout** ✅
+- [x] **Step 2: Global Styles & Layout** âœ…
   - globals.css, layout.tsx created (Navbar/Footer refs added)
 
 - [ ] **Step 3: Reusable UI Components**
   - ui/Button.tsx, Card.tsx created
-  - utils.ts (clsx/tw-merge) ✅
+  - utils.ts (clsx/tw-merge) âœ…
 
 - [ ] **Step 4: Mock Data**
 

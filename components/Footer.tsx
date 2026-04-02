@@ -87,7 +87,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-800 py-4 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+        Â© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
       </div>
     </footer>
   )
