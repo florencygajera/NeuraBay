@@ -45,8 +45,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${fontSans.variable} ${fontDisplay.variable} font-sans`}>
+    <html lang="en">
+      <body suppressHydrationWarning className={`${fontSans.variable} ${fontDisplay.variable} font-sans`}>
         <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-hero-glow">
           <Navbar />
           <PageTransition>

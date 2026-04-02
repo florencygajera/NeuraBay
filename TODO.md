@@ -1,26 +1,8 @@
-# NeuraBay Next.js Website Build TODO (Updated)
+# Fix Next.js Hydration Error
 
-## Progress Tracking
-
-- [x] **Step 1: Core Setup** âœ…
-  - package.json updated with clsx, tailwind-merge âœ…
-  - tailwind.config.js, postcss/next config, tsconfig âœ…
-  - `cd e:/NeuraBay && npm install` (run this next to resolve deps/TS errors)
-
-- [x] **Step 2: Global Styles & Layout** âœ…
-  - globals.css, layout.tsx created (Navbar/Footer refs added)
-
-- [ ] **Step 3: Reusable UI Components**
-  - ui/Button.tsx, Card.tsx created
-  - utils.ts (clsx/tw-merge) âœ…
-
-- [ ] **Step 4: Mock Data**
-
-- [ ] **Step 5: Home Page**
-
-- [ ] **Step 6: Other Pages**
-
-- [ ] **Step 7: Animations & Polish**
-
-**Next: Run `npm install` then refresh VSCode (Cmd/Ctrl+Shift+P > Reload Window) to resolve import errors. Confirm & proceed to data/components?**
+- [x] 1. Create TODO.md with task steps
+- [x] 2. Edit app/layout.tsx to move suppressHydrationWarning to body
+- [x] 3. Update TODO.md after edit
+- [x] 4. Suggest dev server restart and verification
+- [x] 5. Mark complete
 
