@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import type { Route } from 'next'
 import { Github, Linkedin, Twitter } from 'lucide-react'
 import { siteConfig } from '@/lib/site-config'
 
 const quickLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Technologies', href: '/technologies' },
-  { label: 'About', href: '/about' },
+  { label: 'Home', href: '/' as Route },
+  { label: 'Services', href: '/services' as Route },
+  { label: 'Technologies', href: '/technologies' as Route },
+  { label: 'About', href: '/about' as Route },
 ]
 
 export default function Footer() {

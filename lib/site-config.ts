@@ -18,6 +18,6 @@ export const siteConfig = {
     { name: 'Career', href: '/career' },
     { name: 'Contact', href: '/contact' },
   ],
-}
+} as const
 
 export type NavItem = (typeof siteConfig.navItems)[number]
