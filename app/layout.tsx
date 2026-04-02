@@ -21,12 +21,10 @@ export const metadata: Metadata = {
     default: 'NeuraBay | AI-Powered Product Engineering',
     template: '%s | NeuraBay',
   },
-  description:
-    'NeuraBay builds high-performance web, mobile, and AI products for modern teams. Scalable engineering, clean design, and measurable outcomes.',
+  description: 'NeuraBay builds high-performance web, mobile, and AI products for modern teams. Scalable engineering, clean design, and measurable outcomes.',
   openGraph: {
     title: 'NeuraBay | AI-Powered Product Engineering',
-    description:
-      'Scale your product roadmap with NeuraBay across web, mobile, and AI delivery.',
+    description: 'Scale your product roadmap with NeuraBay across web, mobile, and AI delivery.',
     url: 'https://neurabay.com',
     siteName: 'NeuraBay',
     type: 'website',
@@ -45,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning className={`${fontSans.variable} ${fontDisplay.variable} font-sans`}>
         <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-hero-glow">
           <Navbar />
@@ -60,3 +58,4 @@ export default function RootLayout({
     </html>
   )
 }
+
