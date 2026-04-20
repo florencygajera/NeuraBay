@@ -15,11 +15,15 @@ interface RequestConfig {
   retryDelay?: number
 }
 
+type NextRequestInit = RequestInit & {
+  next?: { revalidate?: number; tags?: string[] }
+}
+
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || process.env.API_URL || ''
 
 async function request<T>(
   path: string,
-  init?: RequestInit & { next?: { revalidate?: number; tags?: string[] } },
+  init?: NextRequestInit,
   config: RequestConfig = {},
 ): Promise<T> {
   const retries = config.retries ?? 1
@@ -33,7 +37,7 @@ async function request<T>(
           'Content-Type': 'application/json',
           ...(init?.headers ?? {}),
         },
-      })
+      } as NextRequestInit)
 
       if (!response.ok) {
         throw new APIError(`Request failed (${response.status})`, response.status)
