@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Section from '@/components/ui/Section'
 import { getServices } from '@/lib/repositories/services'
 import ServiceCard from '@/components/services/ServiceCard'

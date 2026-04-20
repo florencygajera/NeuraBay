@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Section from '@/components/ui/Section'
 
 const ContactForm = dynamic(() => import('@/components/forms/ContactForm'), {

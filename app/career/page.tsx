@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import PlaceholderPage from '@/components/sections/PlaceholderPage'
 
 export const metadata: Metadata = {

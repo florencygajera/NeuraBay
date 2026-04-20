@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import HeroSection from '@/components/sections/HeroSection'
 import StatsSection from '@/components/sections/StatsSection'
 import ChatWidgetClient from '@/components/chat/ChatWidgetClient'
