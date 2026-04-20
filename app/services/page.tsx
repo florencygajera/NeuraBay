@@ -14,10 +14,11 @@ export default async function ServicesPage() {
 
   return (
     <Section
+      eyebrow="Capabilities"
       subtitle="Flexible engagement models for startup, scale-up, and enterprise product teams."
-      title="Services"
+      title="A focused menu of services that feels polished and specific."
     >
-      <StaggerGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <StaggerGroup className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {services.map((service) => (
           <StaggerItem key={service.id}>
             <ServiceCard service={service} />

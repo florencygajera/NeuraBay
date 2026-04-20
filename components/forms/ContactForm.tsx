@@ -47,8 +47,15 @@ export default function ContactForm() {
 
   return (
     <form className="surface-card space-y-5 p-6 sm:p-8" onSubmit={handleSubmit(onSubmit)}>
+      <div className="mb-2">
+        <p className="eyebrow">Contact form</p>
+        <p className="mt-3 text-sm leading-7 text-slate-600">
+          Tell us what you&apos;re building, where you feel friction, and what would make this project a success.
+        </p>
+      </div>
+
       <div>
-        <label className="mb-2 block text-sm font-semibold text-slate-800" htmlFor="name">
+        <label className="mb-2 block text-sm font-medium text-slate-800" htmlFor="name">
           Name
         </label>
         <Input id="name" placeholder="Alex Johnson" {...register('name')} />
@@ -56,7 +63,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="mb-2 block text-sm font-semibold text-slate-800" htmlFor="email">
+        <label className="mb-2 block text-sm font-medium text-slate-800" htmlFor="email">
           Work Email
         </label>
         <Input id="email" placeholder="alex@company.com" type="email" {...register('email')} />
@@ -64,14 +71,14 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="mb-2 block text-sm font-semibold text-slate-800" htmlFor="company">
+        <label className="mb-2 block text-sm font-medium text-slate-800" htmlFor="company">
           Company (optional)
         </label>
         <Input id="company" placeholder="Your company" {...register('company')} />
       </div>
 
       <div>
-        <label className="mb-2 block text-sm font-semibold text-slate-800" htmlFor="message">
+        <label className="mb-2 block text-sm font-medium text-slate-800" htmlFor="message">
           Project Details
         </label>
         <Textarea id="message" placeholder="Tell us about your product, goals, and timeline..." {...register('message')} />
@@ -79,14 +86,14 @@ export default function ContactForm() {
       </div>
 
       {serverError ? (
-        <p className="flex items-center gap-2 rounded-lg bg-rose-50 px-3 py-2 text-sm text-rose-700">
+        <p className="flex items-center gap-2 rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
           <AlertCircle className="h-4 w-4" />
           {serverError}
         </p>
       ) : null}
 
       {isSuccess ? (
-        <p className="flex items-center gap-2 rounded-lg bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
+        <p className="flex items-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
           <CheckCircle2 className="h-4 w-4" />
           Message sent. We will reach out within 1 business day.
         </p>

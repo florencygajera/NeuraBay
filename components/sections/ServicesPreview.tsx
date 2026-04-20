@@ -10,10 +10,11 @@ export default async function ServicesPreview() {
 
   return (
     <Section
-      subtitle="From product strategy to production delivery, we partner with teams that need reliable velocity."
-      title="What We Build"
+      eyebrow="Selected capabilities"
+      subtitle="The site should feel premium, but it should also be specific. These are the service areas where NeuraBay can make the biggest difference."
+      title="A concise service menu, built for credibility."
     >
-      <StaggerGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <StaggerGroup className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {services.slice(0, 6).map((service) => (
           <StaggerItem key={service.id}>
             <ServiceCard service={service} />
@@ -21,9 +22,9 @@ export default async function ServicesPreview() {
         ))}
       </StaggerGroup>
 
-      <div className="mt-7">
+      <div className="mt-8">
         <Link
-          className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 transition hover:text-sky-900"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-brand transition hover:text-brand-600"
           href="/services"
         >
           View all services

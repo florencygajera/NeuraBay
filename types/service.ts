@@ -3,5 +3,17 @@ export type Service = {
   slug: string
   title: string
   description: string
-  icon: 'Globe' | 'Smartphone' | 'Palette' | 'ShoppingCart' | 'LineChart' | 'Users'
+  icon:
+    | 'Globe'
+    | 'Smartphone'
+    | 'Palette'
+    | 'ShoppingCart'
+    | 'LineChart'
+    | 'Users'
+    | 'BrainCircuit'
+    | 'CloudCog'
+    | 'Rocket'
+    | 'ShieldCheck'
+    | 'Workflow'
+    | 'FileCode2'
 }

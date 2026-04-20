@@ -19,8 +19,8 @@ export function Card({ children, className }: CardProps) {
 export function CardHeader({ title, description, className }: CardHeaderProps) {
   return (
     <header className={cn('mb-4', className)}>
-      <h3 className="text-xl font-bold text-slate-900">{title}</h3>
-      {description ? <p className="mt-2 text-sm text-slate-600">{description}</p> : null}
+      <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{title}</h3>
+      {description ? <p className="mt-2 text-sm leading-6 text-slate-600">{description}</p> : null}
     </header>
   )
 }

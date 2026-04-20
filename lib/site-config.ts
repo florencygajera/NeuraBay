@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: 'NeuraBay',
+  tagline: 'Premium product engineering for teams that need clarity, speed, and polish.',
   url: 'https://neurabay.com',
   email: 'hello@neurabay.com',
   phone: '+1 (555) 123-4567',
@@ -14,8 +15,6 @@ export const siteConfig = {
     { name: 'Services', href: '/services' },
     { name: 'Technologies', href: '/technologies' },
     { name: 'About', href: '/about' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Career', href: '/career' },
     { name: 'Contact', href: '/contact' },
   ],
 } as const

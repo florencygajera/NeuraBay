@@ -2,6 +2,8 @@ import dynamic from 'next/dynamic'
 import type { Metadata } from 'next'
 import HeroSection from '@/components/sections/HeroSection'
 import StatsSection from '@/components/sections/StatsSection'
+import ProcessSection from '@/components/sections/ProcessSection'
+import ContactBanner from '@/components/sections/ContactBanner'
 import ChatWidgetClient from '@/components/chat/ChatWidgetClient'
 
 const ServicesPreview = dynamic(() => import('@/components/sections/ServicesPreview'))
@@ -18,6 +20,8 @@ export default function HomePage() {
       <HeroSection />
       <StatsSection />
       <ServicesPreview />
+      <ProcessSection />
+      <ContactBanner />
       <ChatWidgetClient />
     </>
   )

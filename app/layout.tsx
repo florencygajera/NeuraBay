@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Manrope, Space_Grotesk } from 'next/font/google'
+import { Cormorant_Garamond, Manrope } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -10,9 +10,10 @@ const fontSans = Manrope({
   variable: '--font-sans',
 })
 
-const fontDisplay = Space_Grotesk({
+const fontDisplay = Cormorant_Garamond({
   subsets: ['latin'],
   variable: '--font-display',
+  weight: ['500', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -21,7 +22,8 @@ export const metadata: Metadata = {
     default: 'NeuraBay | AI-Powered Product Engineering',
     template: '%s | NeuraBay',
   },
-  description: 'NeuraBay builds high-performance web, mobile, and AI products for modern teams. Scalable engineering, clean design, and measurable outcomes.',
+  description:
+    'NeuraBay designs and builds premium web, mobile, and AI products for modern teams. Calm execution, strong taste, and measurable outcomes.',
   openGraph: {
     title: 'NeuraBay | AI-Powered Product Engineering',
     description: 'Scale your product roadmap with NeuraBay across web, mobile, and AI delivery.',
@@ -48,7 +50,7 @@ export default function RootLayout({
         <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-hero-glow">
           <Navbar />
           <PageTransition>
-            <main className="mx-auto w-full max-w-7xl flex-1 px-4 pb-16 pt-24 sm:px-6 lg:px-8">
+            <main className="mx-auto w-full max-w-7xl flex-1 px-4 pb-20 pt-28 sm:px-6 lg:px-8 lg:pt-32">
               {children}
             </main>
           </PageTransition>

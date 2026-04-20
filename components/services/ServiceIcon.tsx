@@ -1,10 +1,16 @@
 import type { ComponentType } from 'react'
 import {
+  BrainCircuit,
+  CloudCog,
+  FileCode2,
   Globe,
   LineChart,
   Palette,
+  Rocket,
   ShoppingCart,
   Smartphone,
+  ShieldCheck,
+  Workflow,
   Users,
   type LucideProps,
 } from 'lucide-react'
@@ -17,6 +23,12 @@ const iconMap: Record<Service['icon'], ComponentType<LucideProps>> = {
   ShoppingCart,
   LineChart,
   Users,
+  BrainCircuit,
+  CloudCog,
+  Rocket,
+  ShieldCheck,
+  Workflow,
+  FileCode2,
 }
 
 export function ServiceIcon({

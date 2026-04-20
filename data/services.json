@@ -22,20 +22,48 @@
   },
   {
     "id": 4,
+    "slug": "ai-automation",
+    "title": "AI & Automation",
+    "description": "Workflow copilots, internal tools, and AI-powered experiences designed to remove repetitive work.",
+    "icon": "BrainCircuit"
+  },
+  {
+    "id": 5,
+    "slug": "cloud-devops",
+    "title": "Cloud & DevOps",
+    "description": "Reliable deployment pipelines, observability, and infrastructure foundations for fast-moving teams.",
+    "icon": "CloudCog"
+  },
+  {
+    "id": 6,
+    "slug": "mvp-development",
+    "title": "MVP Development",
+    "description": "Lean, polished product launches that validate the market without sacrificing the long term architecture.",
+    "icon": "Rocket"
+  },
+  {
+    "id": 7,
+    "slug": "custom-software",
+    "title": "Custom Software",
+    "description": "Business-critical platforms tailored to your workflows, operations, and internal systems.",
+    "icon": "FileCode2"
+  },
+  {
+    "id": 8,
     "slug": "e-commerce-solutions",
     "title": "E-commerce Solutions",
     "description": "Robust storefronts, checkout flows, and operations integrations designed to scale with your revenue.",
     "icon": "ShoppingCart"
   },
   {
-    "id": 5,
+    "id": 9,
     "slug": "growth-marketing",
     "title": "Growth Marketing",
     "description": "Data-led SEO, paid campaigns, and lifecycle strategies to unlock repeatable customer acquisition.",
     "icon": "LineChart"
   },
   {
-    "id": 6,
+    "id": 10,
     "slug": "dedicated-teams",
     "title": "Dedicated Teams",
     "description": "Embedded squads of engineers, designers, and product specialists aligned with your roadmap.",
